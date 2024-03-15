@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FBFBFB"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:foreground="@mipmap/menu_14988466">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:text="Hola, "
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:foreground="@mipmap/bell_3602123">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:foreground="@mipmap/user_456212"
+                android:verticalScrollbarPosition="right">
+
+            </androidx.viewpager2.widget.ViewPager2>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#E0F2F1"
+            android:backgroundTint="#6F8A8A8A"
+            android:ems="1"
+            android:hint="Buscador"
+            android:inputType="text"
+            android:padding="5dp"
+            android:pointerIcon="hand"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
